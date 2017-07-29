@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <title>Dashboard</title>
+   <meta charset="utf-8">
+   <link type="text/css" rel="stylesheet" href="/home/eddietal2/Documents/PredixRedo/CSS/homepage.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </head>
+ <body style="background-color: lightgrey;">
+
+<h2>Predix.Trax<h2>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Profile</a>
+  <a href="/home/eddietal2/Documents/PredixRedo/HTML/homepage.html">Home</a>
+  <a href="/home/eddietal2/Documents/PredixRedo/HTML/assets.html">Assets</a>
+  <a href="/home/eddietal2/Documents/PredixRedo/HTML/location.html">Locations</a>
+</div>
+
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+
+<div class=" container wrapper" >
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">HFM</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Temperature</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Name of Mover</a></li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search Assets">
+        </div>
+        <button type="submit" class="btn btn-default">Go</button>
+      </form>
+    </div>
+  </nav>
+   <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 42.3068089, lng: -83.2426519};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+      <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZfXhUex6lvv-PTHM2skTm3GoZ6wwukBw&callback=initMap">
+    </script></div>
+<!--
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJGd8r0OuvOE4Tu2cvU7zwZxfdAyqhCBo&callback=initMap"></script>
+
+
+ </body>
+ </html>

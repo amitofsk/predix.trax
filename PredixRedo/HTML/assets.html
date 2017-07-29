@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <title>Dashboard</title>
+   <meta charset="utf-8">
+   <link type="text/css" rel="stylesheet" href="/home/eddietal2/Documents/PredixRedo/CSS/assets.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </head>
+ <body style="background-color: lightgrey;">
+
+
+
+   <div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="#">Profile</a>
+     <a href="/home/eddietal2/Documents/PredixRedo/HTML/homepage.html">Home</a>
+     <a href="/home/eddietal2/Documents/PredixRedo/HTML/assets.html">Assets</a>
+     <a href="/home/eddietal2/Documents/PredixRedo/HTML/location.html">Locations</a>
+   </div>
+
+
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<h2>Predix.Trax<h2>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<h1 class="animated fadeInUp">ASSETS</h1>
+
+
+<div id="accordion" class="container wrapper">
+  <div class="row">
+    <div class="col-xs-3 asset" data-toggle="collapse" data-target="#assetMenuOne" data-parent="#accordion">
+      <p>Asset 1</p>
+    </div>
+    <div class="col-xs-3 asset" data-toggle="collapse" data-target="#assetMenuTwo" data-parent="#accordion">
+      <p>Asset 2</p>
+    </div>
+
+  </div>
+
+
+  <div id="assetMenuOne" class="collapse">
+  ONE
+  </div>
+
+  <div id="assetMenuTwo" class="collapse">
+    TWO
+  </div>
+
+</div>
+
+
+
+ </body>
+ </html>
