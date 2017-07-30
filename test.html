@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+
+<meta charset="utf-8"/>
+    </head>
+<style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+<body onload="AuthenticateLocation1()">
+    
+     
+    <button type="submit" onclick="AuthenticateLocation1()">Current GPS</button>
+    <button type="submit" onclick="AuthenticateHumidity1()">Current Humidity</button>
+    <button type="submit" onclick="AuthenticationTemp1()">Current Tempy</button>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="universal.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZwh1ljZs0QmnEPgCyDNuOhWXtf0PXvbg&callback=initMap">
+    </script>
+    <div id="map"></div>
+    <script>
+        console.log("temp1 \n" + HistoricalTemp1());
+        console.log(" \ntemp 2 \n" + HistoricalTemp2());
+        
+        console.log("\nLocations1 \n" + HistoricalLocationData1());
+        console.log("\nlocations2 \n" + HistoricalLocationData2());
+        
+        console.log("\nHumidity1 \n" + HistoricalHumidityData1());
+        console.log(" \nhumid 2 \n" + HistoricalHumidityData2());
+    
+    
+    
+    </script>
+    </body>
+
+    </html>
