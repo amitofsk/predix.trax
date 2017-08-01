@@ -1,0 +1,22 @@
+Our predix page is at [1]. Our devpost page is at [2], and our github page is at [3].
+To setup our predix page, I followed the tutorials at [4], [5], [6]. 
+We used Google maps, and started by following the tutorial at [7]. We fixed the coordinate system problem, so it wasn’t showing the car in the Detroit River, by following [8].
+I had both a camera and a sensehat [9] connected to a raspberry pi. I followed a tutorial to get the camera working [10] and another tutorial to get the sensehat working [11]. 
+To put the pictures on our website, I set up an apache webserver on the raspberry pi following the tutorial at [12]. I tried to set up a restAPI server too so that we could get and post accelerometer data. To setup the restAPI server, I followed the instructions at [13]. I think I was able to set it up and working, but I ran out of time to try to figure out how to use it and integrate it with our website.
+I used Twilio [14] for texting. I followed the tutorial at [15] for the javascript code for twilio.
+
+[1] https://team13-predix-helloworld-webapp.run.aws-usw02-pr.ice.predix.io/HTML/index.html
+[2] https://devpost.com/software/predix-trax
+[3] https://github.com/amitofsk/predix.trax
+[4] https://docs.predix.io/en-US/content/platform/get_started/get_started_for_predix_developers/predix-overview
+[5] https://docs.predix.io/en-US/content/platform/get_started/get_started_for_predix_developers/predix-development-environment-setup
+[6] https://docs.predix.io/en-US/content/platform/get_started/get_started_for_predix_developers/deploying-an-application-to-cloud-foundry
+[7] https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+[8] https://community.oracle.com/thread/3619431
+[9] https://www.raspberrypi.org/products/sense-hat/
+[10] https://www.raspberrypi.org/learning/getting-started-with-picamera/
+[11] https://www.raspberrypi.org/learning/getting-started-with-the-sense-hat/worksheet/
+[12] https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md
+[13] http://www.robert-drummond.com/2013/05/08/how-to-build-a-restful-web-api-on-a-raspberry-pi-in-javascript-2/
+[14] https://www.twilio.com/
+[15] https://www.twilio.com/docs/libraries/node
